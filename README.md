@@ -6,3 +6,4 @@ Anggota:
 3. Anya Salsabila - E1E121022
 4. Rina - E1E121089
 5. Sulaiman - E1E121093
+6. Muh. Saleh Badawi - E1E121069
