@@ -18,6 +18,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @link            https://github.com/chriskacerguis/codeigniter-restserver
  * @version         3.0.0
  */
+
+require APPPATH . 'libraries/REST_Controller_Definitions.php';
+ 
 trait REST_Controller {
 
     /**
@@ -924,7 +927,9 @@ trait REST_Controller {
                 $method = $this->input->server('HTTP_X_HTTP_METHOD_OVERRIDE');
             }
 
-            $method = strtolower($method);
+            if ($method !== null) {
+                $method = strtolower($method);
+            }
         }
 
         if (empty($method))

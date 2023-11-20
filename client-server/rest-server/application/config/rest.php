@@ -110,7 +110,7 @@ $config['rest_realm'] = 'REST API';
 |           authorization key
 |
 */
-$config['rest_auth'] = false;
+$config['rest_auth'] = 'basic'; //aktifkan
 
 /*
 |--------------------------------------------------------------------------
@@ -126,7 +126,7 @@ $config['rest_auth'] = false;
 | Note: If 'rest_auth' is set to 'session' then change 'auth_source' to the name of the session variable
 |
 */
-$config['auth_source'] = 'ldap';
+$config['auth_source'] = ''; //kosongkan ldap
 
 /*
 |--------------------------------------------------------------------------
@@ -211,7 +211,7 @@ $config['auth_library_function'] = '';
 | Array of usernames and passwords for login, if ldap is configured this is ignored
 |
 */
-$config['rest_valid_logins'] = ['admin' => '1234'];
+$config['rest_valid_logins'] = ['admin' => '1234', 'nabil' => 'nabil123'];
 
 /*
 |--------------------------------------------------------------------------
@@ -324,7 +324,7 @@ $config['rest_keys_table'] = 'keys';
 |   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 |
 */
-$config['rest_enable_keys'] = false;
+$config['rest_enable_keys'] = true; //ubah jadi true utk mengaktifkan key autentikasi
 
 /*
 |--------------------------------------------------------------------------
@@ -351,7 +351,7 @@ $config['rest_key_column'] = 'key';
 | $config['rest_limits_method'] = 'ROUTED_URL';  // Put a limit on the routed URL
 |
 */
-$config['rest_limits_method'] = 'ROUTED_URL';
+$config['rest_limits_method'] = 'ROUTED_URL'; 
 
 /*
 |--------------------------------------------------------------------------
@@ -377,7 +377,7 @@ $config['rest_key_length'] = 40;
 | 2012/06/12. See RFC 6648 specification for more details
 |
 */
-$config['rest_key_name'] = 'X-API-KEY';
+$config['rest_key_name'] = 'api-key'; //nama key
 
 /*
 |--------------------------------------------------------------------------
@@ -483,11 +483,11 @@ $config['rest_logs_json_params'] = false;
 | To specify the limits within the controller's __construct() method, add per-method
 | limits with:
 |
-|       $this->methods['METHOD_NAME']['limit'] = [NUM_REQUESTS_PER_HOUR];
+|       $this->methods['METHOD_NAME']['limit'] = [NUM_REQUESTS_PER_HOUR]; //method itu mau dilimit berapa per jam
 |
 | See application/controllers/api/example.php for examples
 */
-$config['rest_enable_limits'] = false;
+$config['rest_enable_limits'] = true; //aktifkan untuk mengatur limit
 
 /*
 |--------------------------------------------------------------------------
