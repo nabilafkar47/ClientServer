@@ -1,7 +1,7 @@
 <div class="container">
 
     <div class="row mt-3">
-        <div class="col-md-6">
+        <div class="col-md-12">
 
             <div class="card">
                 <div class="card-header">
@@ -35,7 +35,9 @@
                                 <option value="Teknik Lingkungan">Teknik Lingkungan</option>
                             </select>
                         </div>
-                        <button type="submit" name="tambah" class="btn btn-primary float-right">Tambah Data</button>
+
+                        <a href="<?= base_url(); ?>mahasiswa" class="btn btn-primary">Kembali</a>
+                        <button type="submit" name="tambah" class="btn btn-primary">Tambah Data</button>
                     </form>
                 </div>
             </div>

@@ -8,9 +8,10 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title"><?= $mahasiswa['nama']; ?></h5>
-                    <h6 class="card-subtitle mb-2 text-muted"><?= $mahasiswa['email']; ?></h6>
                     <p class="card-text"><?= $mahasiswa['nrp']; ?></p>
+                    <h6 class="card-subtitle mt-3 mb-3 text-muted"><?= $mahasiswa['email']; ?></h6>
                     <p class="card-text"><?= $mahasiswa['jurusan']; ?></p>
+
                     <a href="<?= base_url(); ?>mahasiswa" class="btn btn-primary">Kembali</a>
                 </div>
             </div>

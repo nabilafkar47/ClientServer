@@ -13,9 +13,7 @@
                 <li>Rina - E1E121089</li>
                 <li>Sulaiman - E1E121093</li>
             </ol>
-            <p>Link Github: <a href="https://github.com/nabilafkar47/ClientServer">ClientServer</a></p>
-
-
+            <p>Link Github: <a href="https://github.com/nabilafkar47/ClientServer" target="_blank">Client Server</a></p>
         </div>
     </div>
 </div>
