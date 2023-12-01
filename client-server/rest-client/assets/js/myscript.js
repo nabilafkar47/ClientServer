@@ -15,12 +15,13 @@ $('.tombol-hapus').on('click', function (e) {
     const href = $(this).attr('href');
 
     Swal({
-        title: 'Apakah anda yakin',
-        text: "data mahasiswa akan dihapus",
+        title: 'Apakah Anda Yakin?',
+        text: "Data Mahasiswa Akan Dihapus",
         type: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
+        cancelButtonText: 'Batal',
         confirmButtonText: 'Hapus Data!'
     }).then((result) => {
         if (result.value) {
