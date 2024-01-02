@@ -8,3 +8,5 @@ Anggota:
 5. Sulaiman - E1E121093
 6. Muh. Saleh Badawi - E1E121069
 7. Laode Muhamad Noer Syahwal Yahya - E1E121063
+
+Nabil Final
